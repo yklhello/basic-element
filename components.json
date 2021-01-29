@@ -1,0 +1,4 @@
+{
+  "encounterFilter": "./packages/encounterFilter/index.js",
+  "footer": "./packages/footer/index.js"
+}

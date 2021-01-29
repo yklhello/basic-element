@@ -1,0 +1,30 @@
+
+{
+	"component": {
+		"开发指南": [
+			{
+				"name": "index",
+				"type": "pages"
+			}, {
+				"name": "introduction",
+				"desc": "介绍"
+			}, {
+				"name": "develop",
+				"desc": "开发"
+			}, {
+				"name": "quickstart",
+				"desc": "开始使用"
+			}
+		],
+		"组件": [
+			{
+				"desc": "footer 脚部组件",
+				"name": "footer"
+			},
+			{
+				"desc": "患者查询过滤面板",
+				"name": "encounterFilter"
+			}
+		]
+	}
+}
