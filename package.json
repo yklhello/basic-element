@@ -1,8 +1,8 @@
 {
   "name": "ykl-components",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "basic component for project",
-  "main": "src/index.js",
+  "main": "lib/ykl-components.common.js",
   "author": "roy",
   "license": "MIT",
   "scripts": {

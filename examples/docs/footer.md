@@ -1,4 +1,4 @@
-## win-footer 页脚组件
+## ykl-footer 页脚组件
 提供6.0统一的页脚组件
 
 ### 使用实例
@@ -6,7 +6,7 @@
 ```html
 <template>
   <div  style="position:relative; height: 40px; width: 100%;">
-    <win-footer :copyright-text="text"/>
+    <ykl-footer :copyright-text="text"/>
   </div>
 </template>
 

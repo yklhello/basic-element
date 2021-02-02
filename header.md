@@ -123,7 +123,7 @@
               code: ''
             },
             iconOptions: {
-              name: 'win-icon-closeRound',
+              name: 'ykl-icon-closeRound',
               handler: ()=> {
                 console.log('nav icon click')
               }
@@ -143,7 +143,7 @@
               code: ''
             },
             iconOptions: {
-              name: 'win-icon-closeRound',
+              name: 'ykl-icon-closeRound',
               handler: ()=> {
                 console.log('nav icon click')
               }
@@ -165,7 +165,7 @@
 :::demo 需要传入dropOptions对象数组即可，具体参数见下表
 ```html
 <template>
-  <win-header :options="options"/>
+  <ykl-header :options="options"/>
 </template>
 
 <script>
@@ -175,7 +175,7 @@
          options: {
            dropOptions: [
              {
-               icon:'win-icon-medicalHuman',
+               icon:'ykl-icon-medicalHuman',
                name:'个人中心',
                disabled: true
              },
@@ -214,7 +214,7 @@
 ### Options Attributes
 | 参数      | 说明          | 类型      | 可选值                           | 默认值  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| logoName | Logo图标 | string | — | win-header-logo |
+| logoName | Logo图标 | string | — | ykl-header-logo |
 | logoLink | Logo点击事件 | string/function | — | - |
 | title | 应用名称 | string | — | 卫宁医院住院医生站 |
 | theme | 是否显示换肤图标 | boolean | — | false |

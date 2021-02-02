@@ -1,4 +1,3 @@
 {
-  "encounterFilter": "./packages/encounterFilter/index.js",
-  "footer": "./packages/footer/index.js"
+  "ykl-footer": "./packages/ykl-footer/index.js"
 }
