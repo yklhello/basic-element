@@ -1,5 +1,5 @@
 /* eslint-disable */
-import HttpClient from '@winning-plugin/win-6.0-httpclient'
+import HttpClient from 'axios'
 import { Message } from 'element-ui'
 
 // 返回axios实例
