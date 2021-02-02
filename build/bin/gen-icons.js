@@ -3,7 +3,7 @@
 var postcss = require('postcss')
 var fs = require('fs')
 var path = require('path')
-var fontFile = fs.readFileSync(path.resolve(__dirname, '../../packages/finance-theme/src/winning-components/component-icon.scss'), 'utf8')
+var fontFile = fs.readFileSync(path.resolve(__dirname, '../../packages/finance-theme/src/ykl-components/component-icon.scss'), 'utf8')
 var nodes = postcss.parse(fontFile).nodes 
 var classObj = {
   common: [],

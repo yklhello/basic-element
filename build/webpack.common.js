@@ -12,10 +12,10 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: `win-components.common.js`,
+    filename: `ykl-components.common.js`,
     chunkFilename: '[id].js',
     libraryExport: 'default',
-    library: 'WIN-COMPONENTS',
+    library: 'YKL-COMPONENTS',
     libraryTarget: 'commonjs2' // 将库的返回值分配给module.exports
   },
   resolve: {

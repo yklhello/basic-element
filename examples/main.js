@@ -47,7 +47,7 @@ router.afterEach(route => {
     var blocks = document.querySelectorAll('pre code:not(.hljs)')
     Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   })
-  document.title = 'winning-components'
+  document.title = 'ykl-components'
 })
 
 

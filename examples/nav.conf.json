@@ -20,10 +20,6 @@
 			{
 				"desc": "footer 脚部组件",
 				"name": "footer"
-			},
-			{
-				"desc": "患者查询过滤面板",
-				"name": "encounterFilter"
 			}
 		]
 	}
