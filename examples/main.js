@@ -28,16 +28,16 @@ Vue.use(winComponents)
 // Vue.prototype.$icon = icon
 // Vue.prototype.$svg = svgConf
 const isDev = process.env.NODE_ENV === 'development'
-if (isDev) {
-  const WinLogin = require('@winning-plugin/portal-login-plugin').default
-  /* eslint-disable no-new */
-  new WinLogin({
-    username: 'L10044',
-    password: '456'
-  })
-  Cookie.set('W-SEQ', 9999)
-  Cookie.set('W-FLOW', 'canary')
-}
+// if (isDev) {
+//   const WinLogin = require('@winning-plugin/portal-login-plugin').default
+//   /* eslint-disable no-new */
+//   new WinLogin({
+//     username: 'L10044',
+//     password: '456'
+//   })
+//   Cookie.set('W-SEQ', 9999)
+//   Cookie.set('W-FLOW', 'canary')
+// }
 
 Vue.config.productionTip = false
 

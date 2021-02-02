@@ -1,8 +1,8 @@
 {
   "name": "ykl-components",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "basic component for project",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "roy",
   "license": "MIT",
   "scripts": {
@@ -16,7 +16,6 @@
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@vue/component-compiler-utils": "^3.1.2",
-    "@winning-plugin/portal-login-plugin": "^1.0.12",
     "axios": "^0.19.2",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
@@ -54,7 +53,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@winning-plugin/win-6.0-httpclient": "^1.0.9",
     "element-ui": "^2.13.2",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
