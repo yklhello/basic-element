@@ -1,7 +1,7 @@
 {
-  "name": "winning-webcomponents-encounter-common",
-  "version": "0.0.3",
-  "description": "common component for win6.0",
+  "name": "ykl-components",
+  "version": "0.0.1",
+  "description": "basic component for project",
   "main": "index.js",
   "author": "roy",
   "license": "MIT",
@@ -13,7 +13,6 @@
     "clean": "rimraf lib",
     "dist": "npm run clean && npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
   },
-  "private": true,
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@vue/component-compiler-utils": "^3.1.2",

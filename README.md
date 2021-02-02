@@ -25,7 +25,7 @@ yarn ready
 
 ### 开始开发
 
-执行 `yarn start` 命令，在浏览器中打开 [http://localhost:8085](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
+执行 `yarn start` 命令，在浏览器中打开 [http://localhost:9000](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
 
 注意：
 - 如果需要修改组件的样式，需要修改packages/winning-theme里组件对应的源文件即可。
