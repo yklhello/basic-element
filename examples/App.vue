@@ -13,17 +13,11 @@
         </div>
       </div>
       <router-view v-if="isIndex" class="page" />
-      <!-- <main-footer v-if="!isIndex" /> -->
     </div>
   </div>
 </template>
 
 <script>
-// import {
-//   loginExample,
-//   getUserInfo
-// } from 'examples/api/common'
-// import Cookies from 'js-cookie'
 import mainHeader from './components/header'
 import sideNav from './components/side-nav'
 import navConf from './nav.conf.json'
@@ -32,7 +26,6 @@ export default {
   components: {
     mainHeader,
     sideNav
-    // mainFooter
   },
   data () {
     return {
@@ -50,42 +43,10 @@ export default {
     }
   },
   mounted () {
-    //  这里模拟数据请求
-    setTimeout(() => {
-      this.init = true
-    }, 250)
   },
   created () {
-    // this.getInfo()
   },
   methods: {
-    login () {
-      return loginExample({
-        username: 'L10044',
-        password: 'NjU0'
-      }).then(res => {
-        Cookies.set('BEARER_TOKEN', res.data
-          ? `Bearer ${res.data.access_token}` : '', { expires: 9.8 })
-        return res
-      })
-    },
-    getInfo () {
-      this.login().then(res => {
-        if (res.success) {
-          getUserInfo({
-            token: res.data.access_token
-          }).then(res => {
-            this.isEndGetUserInfo = true
-            if (res.success) {
-              Cookies.set('userInfo', res.data, { expires: 9.8 })
-            }
-            // console.log(res)
-          })
-        }
-      }).catch(() => {
-        this.isEndGetUserInfo = true
-      })
-    }
   }
 }
 </script>
