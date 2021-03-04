@@ -15,7 +15,7 @@
 
 ### 安装依赖和准备工作
 
-ykl-components 使用 `yarn` 管理依赖版本，因此请确保本机已正确安装 yarn。进入项目文件夹，执行以下命令：
+win-components 使用 `yarn` 管理依赖版本，因此请确保本机已正确安装 yarn。进入项目文件夹，执行以下命令：
 
 第一次执行命令
 ```shell
@@ -28,7 +28,7 @@ yarn ready
 执行 `yarn start` 命令，在浏览器中打开 [http://localhost:9000](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
 
 注意：
-- 如果需要修改组件的样式，需要修改packages/winning-theme里组件对应的源文件即可。
+- 如果需要修改组件的样式，需要修改packages/win-theme里组件对应的源文件即可。
 - 如果新增组件，需要在packages文件夹下新增你的组件，同时执行`yarn build:file`生成最新的入口注册文件，最后在examples/docs中添加你的md文档
 
 ### 开发完成

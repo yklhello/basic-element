@@ -9,7 +9,7 @@ const cssmin = require('gulp-cssmin')
 // const svgSymbols = require('gulp-svg-symbols')
 
 function compile () {
-  return src(['./src/winning-components/*.scss', './src/*.scss'])
+  return src(['./src/win-components/*.scss', './src/*.scss'])
     .pipe(sass.sync())
     .pipe(autoprefixer({
       cascade: false

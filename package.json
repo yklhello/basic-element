@@ -1,15 +1,15 @@
 {
-  "name": "ykl-components",
-  "version": "0.0.7",
+  "name": "win-components",
+  "version": "0.0.8",
   "description": "basic component for project",
-  "main": "lib/ykl-components.common.js",
+  "main": "lib/win-components.common.js",
   "author": "roy",
   "license": "MIT",
   "scripts": {
     "ready": "npm install && npm run build:file && npm run start",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.example.js",
     "build:file": "node build/bin/gen-components & node build/bin/build-entry.js",
-    "build:theme": "gulp build --gulpfile packages/winning-theme/gulpfile.js && cp-cli packages/winning-theme/lib lib/winning-theme",
+    "build:theme": "gulp build --gulpfile packages/win-theme/gulpfile.js && cp-cli packages/win-theme/lib lib/win-theme",
     "clean": "rimraf lib",
     "dist": "npm run clean && npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
   },

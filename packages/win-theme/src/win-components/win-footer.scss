@@ -1,6 +1,6 @@
 @import "../mixins/mixins";
 
-@include ykl(footer-wrapper) {
+@include win(footer-wrapper) {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -17,7 +17,7 @@ import 'examples/assets/style/index.scss'
 import Cookie from 'js-cookie'
 
 // 流程
-import 'packages/winning-theme/lib/index.css'
+import 'packages/win-theme/lib/index.css'
 // import 'packages/finance-theme/src/winning-components/data-analysis.scss'
 // import 'packages/finance-theme/src/winning-components/finance-payment.scss'
 
@@ -47,7 +47,7 @@ router.afterEach(route => {
     var blocks = document.querySelectorAll('pre code:not(.hljs)')
     Array.prototype.forEach.call(blocks, hljs.highlightBlock)
   })
-  document.title = 'ykl-components'
+  document.title = 'win-components'
 })
 
 

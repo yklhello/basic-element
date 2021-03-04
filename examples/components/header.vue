@@ -3,7 +3,7 @@
     <div class="header-container">
       <h1 class="header-logo">
         <router-link to="/">
-          ykl-components
+          win-components
         </router-link>
       </h1>
       <ul class="header-nav">

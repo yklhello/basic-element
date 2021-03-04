@@ -1,11 +1,11 @@
-## ykl-header 头部组件
+## win-header 头部组件
 提供6.0统一的头部组件
 
 ### 基本功能
 :::demo  普通使用时只需传入`title`字段替换标题名称即可，传入`logoLink`即可使用点击事件
 ```html
 <template>
-  <ykl-header :options="options"/>
+  <win-header :options="options"/>
 </template>
 
 <script>
@@ -38,7 +38,7 @@
 :::demo  要显示通知图标，请设置badge对象，其中`value`值为通知数量，`handler`为点击事件函数。要显示换肤图标，请设置`theme`为true
 ```html
 <template>
-  <ykl-header :options="options"/>
+  <win-header :options="options"/>
 </template>
 
 <script>
@@ -66,7 +66,7 @@
 :::demo 要使用带导航的Header，只需要传入routes数组对象即可，组件内部使用`router-link`实现路由跳转，并且设置了`active-class`对导航激活样式进行绑定。具体参数见下表
 ```html
 <template>
-  <ykl-header :options="options" :routes="routes"/>
+  <win-header :options="options" :routes="routes"/>
 </template>
 
 <script>
@@ -82,7 +82,7 @@
          routes: [
               {
                 name: "Footer组件",
-                path: '/component/ykl-footer',
+                path: '/component/win-footer',
               },
            ]
       }
@@ -97,7 +97,7 @@
 :::demo 要使用带带标签页导航的Header，需要传入`tabRoutes`具体参数见下表
 ```html
 <template>
-  <ykl-header :options="options" :tabRoutes="tabs"/>
+  <win-header :options="options" :tabRoutes="tabs"/>
   <router-view/>
 </template>
 

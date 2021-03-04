@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
-    filename: `ykl-components.common.js`,
+    filename: `win-components.common.js`,
     chunkFilename: '[id].js',
     libraryExport: 'default',
     library: 'YKL-COMPONENTS',

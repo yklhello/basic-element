@@ -15,7 +15,7 @@
 
 ### 安装依赖和准备工作
 
-ykl-components 使用 `yarn` 管理依赖版本，因此请确保本机已正确安装 yarn。进入项目文件夹，执行以下命令：
+win-components 使用 `yarn` 管理依赖版本，因此请确保本机已正确安装 yarn。进入项目文件夹，执行以下命令：
 
 ```shell
 yarn bootstrap || npm run bootstrap

@@ -75,7 +75,7 @@
   }
 }
 
-@mixin ykl($block) {
+@mixin win($block) {
   $B: $winingspace + '-' + $block !global;
 
   .#{$B} {
