@@ -3,7 +3,7 @@
     <div class="header-container">
       <h1 class="header-logo">
         <router-link to="/">
-          win-components
+          sungrow-components
         </router-link>
       </h1>
       <ul class="header-nav">

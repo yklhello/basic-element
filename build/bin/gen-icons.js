@@ -3,8 +3,8 @@
 var postcss = require('postcss')
 var fs = require('fs')
 var path = require('path')
-var fontFile = fs.readFileSync(path.resolve(__dirname, '../../packages/finance-theme/src/win-components/component-icon.scss'), 'utf8')
-var nodes = postcss.parse(fontFile).nodes 
+var fontFile = fs.readFileSync(path.resolve(__dirname, '../../packages/finance-theme/src/sungrow-components/component-icon.scss'), 'utf8')
+var nodes = postcss.parse(fontFile).nodes
 var classObj = {
   common: [],
   outpatient: []

@@ -1,17 +1,17 @@
 {
-  "name": "win-components",
-  "version": "0.0.8",
+  "name": "sungrow-components",
+  "version": "0.0.1",
   "description": "basic component for project",
-  "main": "lib/win-components.common.js",
+  "main": "lib/sungrow-components.common.js",
   "author": "roy",
   "license": "MIT",
   "scripts": {
     "ready": "npm install && npm run build:file && npm run start",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.example.js",
     "build:file": "node build/bin/gen-components & node build/bin/build-entry.js",
-    "build:theme": "gulp build --gulpfile packages/win-theme/gulpfile.js && cp-cli packages/win-theme/lib lib/win-theme",
+    "build:theme": "gulp build --gulpfile packages/sungrow-theme/gulpfile.js && cp-cli packages/sungrow-theme/lib lib/sungrow-theme",
     "clean": "rimraf lib",
-    "dist": "npm run clean && npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
+    "dist": "npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",

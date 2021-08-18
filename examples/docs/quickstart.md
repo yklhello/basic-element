@@ -1,18 +1,18 @@
 ## 快速上手
 
-本节将介绍如何在项目中使用 win-components。
+本节将介绍如何在项目中使用 sungrow-components。
 
 ### npm 安装
 
 推荐使用 yarn或npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
 
 ```shell
-yarn add win-components || npm install win-components -S
+yarn add sungrow-components || npm install sungrow-components -S
 ```
 
-### 引入 win-components
+### 引入 sungrow-components
 
-你可以引入整个 win-components，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 win-components。
+你可以引入整个 sungrow-components，或是根据需要仅引入部分组件。我们先介绍如何引入完整的 sungrow-components。
 
 #### 完整引入
 
@@ -20,11 +20,11 @@ yarn add win-components || npm install win-components -S
 
 ```javascript
 import Vue from 'vue';
-import WinComponents from 'win-components';
-import 'win-components/lib/finance-theme/index.css';
+import SungrowComponents from 'sungrow-components';
+import 'sungrow-components/lib/finance-theme/index.css';
 import App from './App.vue';
 
-Vue.use(WinComponents);
+Vue.use(SungrowComponents);
 
 new Vue({
   el: '#app',
@@ -32,17 +32,8 @@ new Vue({
 });
 ```
 
-以上代码便完成了 win-components 的引入。样式文件需要单独引入。
+以上代码便完成了 sungrow-components 的引入。样式文件需要单独引入。
 
-另外需要注意的是:
-- 我们对element-UI 进行了二次开发index.css 是包括了，*element-ui*所有组件自定义样式和win-components所有组件样式。
-- 如果只引入*element-ui*样式
-```javascript
-import 'winning-components/lib/finance-theme/element-ui.css';
-```
-- 如果只引入*winning-components*样式
-```javascript
-import 'win-components/lib/finance-theme/win-components.css';
 ```
 
 #### 按需引入组件CSS
@@ -66,7 +57,7 @@ module.exports = {
     [
       'component',
       {
-        libraryName: "win-components",
+        libraryName: "sungrow-components",
         styleLibraryName: 'finance-theme'
       }
     ]
@@ -74,18 +65,16 @@ module.exports = {
 }
 ```
 
-接下来，如果你只希望引入部分组件，比如 PatientInput 和 SvgIcon main.js 中写入以下内容：
+接下来，如果你只希望引入部分组件，比如 SungrowFooter， main.js 中写入以下内容：
 
 ```javascript
 import Vue from 'vue';
-import { PatientInput, SvgIcon } from 'win-components';
+import { SungrowFooter } from 'sungrow-components';
 import App from './App.vue';
 
-Vue.component(PatientInput.name, PatientInput);
-Vue.component(SvgIcon.name, SvgIcon);
+Vue.component(SungrowFooter.name, SungrowFooter);
 /* 或写为
- * Vue.use(PatientInput)
- * Vue.use(SvgIcon)
+ * Vue.use(SungrowFooter)
  */
 
 new Vue({
@@ -99,29 +88,23 @@ new Vue({
 ```javascript
 import Vue from 'vue';
 import {
-  PatientInput,
-  iconSvg
-} from 'win-components';
+  SungrowFooter,
+} from 'sungrow-components';
 
-Vue.use(PatientInput);
-Vue.use(iconSvg);
+Vue.use(SungrowFooter);
 ```
 
 
 
-按需引入 win-components：
+按需引入 sungrow-components：
 
 ```js
 import Vue from 'vue';
-import { PatientInput } from 'win-components';
+import { SungrowFooter } from 'sungrow-components';
 
-Vue.use(PatientInput);
+Vue.use(SungrowFooter);
 ```
-
-#### 引入svg图片
-
-组件依赖`icon` 或者 `svg`是很常见的事，所以在使用组件时必需引入组件所依赖的 `svg`资源，借助 webpack loader [svg-sprite-loader](https://github.com/JetBrains/svg-sprite-loader)，我们可以引入win-components中finance-theme中的icon-svg的svg，通常常用的icon会放在icon-svg中。具体使用可以参考[住院医生站](http://tfs2018-web.winning.com.cn:8080/tfs/WINNING-6.0/W.in-MVP/%E8%B4%B9%E7%94%A8%E5%9F%9F%E5%9B%A2%E9%98%9F/_git/winning-web-jindal)
 
 ### 开始使用
 
-至此，一个基于 Vue 和 win-components 的开发环境已经搭建完毕，现在就可以编写代码了。各个组件的使用方法请参阅它们各自的文档。
+至此，一个基于 Vue 和 sungrow-components 的开发环境已经搭建完毕，现在就可以编写代码了。各个组件的使用方法请参阅它们各自的文档。

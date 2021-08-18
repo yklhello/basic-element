@@ -3,9 +3,6 @@
 	"component": {
 		"开发指南": [
 			{
-				"name": "index",
-				"type": "pages"
-			}, {
 				"name": "introduction",
 				"desc": "介绍"
 			}, {

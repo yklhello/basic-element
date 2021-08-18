@@ -7,7 +7,7 @@ const package = require('../package.json')
 let externals = {}
 
 Object.keys(Components).forEach(function(key) {
-  externals[`win-components/packages/${key}`] = `win-components/lib/${key}`
+  externals[`sungrow-components/packages/${key}`] = `sungrow-components/lib/${key}`
 })
 
 externals = [Object.assign({
@@ -22,7 +22,7 @@ exports.alias = {
   main: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../packages'),
   examples: path.resolve(__dirname, '../examples'),
-  'win-components': path.resolve(__dirname, '../')
+  'sungrow-components': path.resolve(__dirname, '../')
 }
 
 exports.vue = {

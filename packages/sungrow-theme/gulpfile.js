@@ -2,14 +2,9 @@ const { series, src, dest } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const cssmin = require('gulp-cssmin')
-// const svgstore = require('gulp-svgstore')
-// const svgmin = require('gulp-svgmin')
-// const rename = require("gulp-rename")
-// const package = require('../../package.json')
-// const svgSymbols = require('gulp-svg-symbols')
 
 function compile () {
-  return src(['./src/win-components/*.scss', './src/*.scss'])
+  return src(['./src/sungrow-components/*.scss', './src/*.scss'])
     .pipe(sass.sync())
     .pipe(autoprefixer({
       cascade: false

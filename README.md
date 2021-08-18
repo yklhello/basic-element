@@ -5,7 +5,7 @@
 ```
 ├── build                    # webpack 脚本和发布脚本
 ├── packages                 # 组件源码
-│   ├── winning－theme       # 样式文件（业务组件的样式）
+│   ├── sungrow－theme       # 样式文件（业务组件的样式）
 │   └── ...                  # 其他组件
 ├── src
 │   ├── utils                # 常用方法
@@ -15,20 +15,18 @@
 
 ### 安装依赖和准备工作
 
-win-components 使用 `yarn` 管理依赖版本，因此请确保本机已正确安装 yarn。进入项目文件夹，执行以下命令：
-
 第一次执行命令
 ```shell
-yarn ready
+npm i
 ```
 这个过程请耐心等待～
 
 ### 开始开发
 
-执行 `yarn start` 命令，在浏览器中打开 [http://localhost:9000](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
+执行 `npm run start` 命令，在浏览器中打开 [http://localhost:9000](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
 
 注意：
-- 如果需要修改组件的样式，需要修改packages/win-theme里组件对应的源文件即可。
+- 如果需要修改组件的样式，需要修改packages/sungrow-theme里组件对应的源文件即可。
 - 如果新增组件，需要在packages文件夹下新增你的组件，同时执行`yarn build:file`生成最新的入口注册文件，最后在examples/docs中添加你的md文档
 
 ### 开发完成
@@ -36,7 +34,7 @@ yarn ready
 - 如果是修复 bug，请确保该组件的其他功能没有受到本修复的影响。
 - 如果是新增功能，请在文档中补充该功能的 API 说明，同时组件命名、css书写要符合规范。
 
-执行 `yarn dist` 命令生成最新的输出
+执行 `npm run dist` 命令生成最新的输出
 
 ### CSS 规范
 组件库采style采用 BEM 命名规范
@@ -51,5 +49,5 @@ yarn ready
 
 - BEM 是一个简单又非常有用的命名约定。让你的前端代码更容易阅读和理解，更容易协作，更容易控制，更加健壮和明确，而且更加严密。
 
-- 所有组件命名均以 win-(模块名) 开头
+- 所有组件命名均以 sungrow-(模块名) 开头
 
