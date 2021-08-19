@@ -125,7 +125,7 @@ const webpackConfig = {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
         loader: 'url-loader',
         exclude: [
-          path.resolve(__dirname, '../packages/finance-theme/lib/icon-svg')
+          path.resolve(__dirname, '../packages/sungrow-theme/lib/icon-svg')
         ],
         // todo: 这种写法有待调整
         query: {

@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import demoBlock from './components/demo-block.vue'
 import ElementUI from 'element-ui'
-import winComponents from '../src/index.js'
+import SungrowComponents from '../src/index.js'
 
 import 'babel-polyfill'
 import hljs from 'highlight.js'
@@ -17,7 +17,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.component('demo-block', demoBlock)
 Vue.use(ElementUI)
-Vue.use(winComponents)
+Vue.use(SungrowComponents)
 
 
 Vue.config.productionTip = false

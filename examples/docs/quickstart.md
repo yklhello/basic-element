@@ -21,7 +21,7 @@ yarn add sungrow-components || npm install sungrow-components -S
 ```javascript
 import Vue from 'vue';
 import SungrowComponents from 'sungrow-components';
-import 'sungrow-components/lib/finance-theme/index.css';
+import 'sungrow-components/lib/sungrow-theme/index.css';
 import App from './App.vue';
 
 Vue.use(SungrowComponents);

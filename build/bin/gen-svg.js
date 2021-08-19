@@ -5,7 +5,7 @@ const glob = require('glob')
 
 const OUTPUT_PATH = path.join(__dirname, '../../examples')
 const OUTPUT_FILE = path.join(OUTPUT_PATH, './svg.json')
-var filterPath = path.join(__dirname, '../../packages/finance-theme/src/icon-svg/*.svg')
+var filterPath = path.join(__dirname, '../../packages/sungrow-theme/src/icon-svg/*.svg')
 
 
 function writeSvgConf () {

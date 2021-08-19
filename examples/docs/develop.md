@@ -24,10 +24,10 @@ npm run bootstrap
 
 ### 开始开发
 
-执行 `npm run start` 命令，在浏览器中打开 [http://localhost:8085](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/component-docs 文件夹下的`md`文件渲染而来。
+执行 `npm run start` 命令，在浏览器中打开 [http://localhost:8085](https://webpack.js.org/)，导航直相应组件即可进行开发。组件由examples/docs 文件夹下的`md`文件渲染而来。
 
 注意：
-- 如果新增组件，需要在packages文件夹下新增你的组件，同时执行`yarn build:file`生成最新的入口注册文件，最后在examples/component-docs中添加你的md文档
+- 如果新增组件，需要在packages文件夹下新增你的组件，同时执行`yarn build:file`生成最新的入口注册文件，最后在examples/docs中添加你的md文档
 
 ### 开发完成
 

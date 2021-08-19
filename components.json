@@ -1,3 +1,4 @@
 {
+  "sungrow-export": "./packages\\sungrow-export\\index.js",
   "sungrow-footer": "./packages\\sungrow-footer\\index.js"
 }

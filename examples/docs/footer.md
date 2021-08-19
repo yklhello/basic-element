@@ -6,7 +6,9 @@
 ```html
 <template>
   <div  style="position:relative; height: 40px; width: 100%;">
-    <sungrow-footer :label="label"/>
+    <sungrow-footer>
+      2021 Sungrow 版权所有
+    </sungrow-footer>
   </div>
 </template>
 
@@ -14,7 +16,6 @@
   export default {
     data () {
       return {
-          label: '版权所有'
       }
     }
   }
@@ -26,5 +27,5 @@
 ### Attributes
 | 参数          | 说明    | 类型      | 可选值       | 默认值   |
 |---- |--- |---- |-------------  |-------- |
-| label | footer描述  | string  |   －            |    2021 Sungrow 版权所有     |
+
 

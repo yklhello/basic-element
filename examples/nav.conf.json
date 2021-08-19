@@ -15,8 +15,12 @@
 		],
 		"组件": [
 			{
-				"desc": "footer 脚部组件",
+				"desc": "Footer",
 				"name": "footer"
+			},
+			{
+				"desc": "Excel导出",
+				"name": "export"
 			}
 		]
 	}

@@ -15,7 +15,7 @@ module.exports = {
     filename: `sungrow-components.common.js`,
     chunkFilename: '[id].js',
     libraryExport: 'default',
-    library: 'YKL-COMPONENTS',
+    library: 'SUNGROW-COMPONENTS',
     libraryTarget: 'commonjs2' // 将库的返回值分配给module.exports
   },
   resolve: {
