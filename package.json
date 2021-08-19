@@ -23,6 +23,8 @@
     "cp-cli": "^2.0.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
+    "url-loader": "^1.0.1",
+    "file-loader": "^1.1.11",
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -57,6 +59,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
     "vue-template-compiler": "^2.6.11",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "rimraf": "^2.5.4"
   }
 }

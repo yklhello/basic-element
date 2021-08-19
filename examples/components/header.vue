@@ -3,43 +3,9 @@
     <div class="header-container">
       <h1 class="header-logo">
         <router-link to="/">
-          sungrow-components
+          <img src="../assets/imgs/logo.svg" style="width: 200px;vertical-align: middle;">
         </router-link>
       </h1>
-      <ul class="header-nav">
-        <li :class="{'header-nav-item': true, 'active': modName === headerItem.modName}"
-            v-for="headerItem in data"
-            :key="headerItem.id">
-          <router-link
-            :to="headerItem.link"
-            exact>
-            {{headerItem.name}}
-          </router-link>
-        </li>
-
-        <!-- 环境选择器 -->
-        <!-- <li class="header-nav-item env-item">
-          <el-dropdown
-            trigger="click"
-            class="header-nav-dropdown">
-            <span>
-              {{defaultEnv}}
-              <i class="el-icon-arrow-down el-icon--right"></i>
-            </span>
-            <el-dropdown-menu
-              slot="dropdown"
-              class="nav-dropdown-list">
-              <el-dropdown-item
-                v-for="(item, key) in envList"
-                :key="key"
-                :disabled="item.key !== 213"
-                @click.native="handleEnvChange(item.key)">
-                {{ item.value }}
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown> -->
-          </li>
-      </ul>
     </div>
   </header>
 </template>

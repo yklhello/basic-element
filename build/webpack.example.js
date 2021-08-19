@@ -122,11 +122,6 @@ const webpackConfig = {
         ]
       },
       {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        include: [path.resolve(__dirname, '../packages/finance-theme/lib/icon-svg')]
-      },
-      {
         test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
         loader: 'url-loader',
         exclude: [

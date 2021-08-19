@@ -75,8 +75,8 @@
   }
 }
 
-@mixin win($block) {
-  $B: $winingspace + '-' + $block !global;
+@mixin sungrow($block) {
+  $B: $sungrowspace + '-' + $block !global;
 
   .#{$B} {
     @content;

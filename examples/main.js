@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import demoBlock from './components/demo-block.vue'
+import ElementUI from 'element-ui'
 import winComponents from '../src/index.js'
 
 import 'babel-polyfill'
@@ -11,9 +12,11 @@ import 'highlight.js/styles/atom-one-light.css'
 import 'examples/assets/style/markdown.css'
 import 'examples/assets/style/index.scss'
 import 'packages/sungrow-theme/lib/index.css'
+import 'element-ui/lib/theme-chalk/index.css'
 
 
 Vue.component('demo-block', demoBlock)
+Vue.use(ElementUI)
 Vue.use(winComponents)
 
 
