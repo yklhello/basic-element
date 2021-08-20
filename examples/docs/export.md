@@ -1,5 +1,5 @@
 ## sungrow-export 导出组件
-支持Excel导出
+支持Excel、文本导出
 
 ### 使用实例
 :::demo
@@ -32,8 +32,9 @@
 ### Attributes
 | 参数          | 说明    | 类型      | 可选值       | 默认值   |
 |---- |--- |---- |-------------  |-------- |
-| text | 按钮值  | string  |   －            |    导出     |
+| type | 导出类型  | string  |   excel，text            |    excel     |
+| text | 按钮文本  | string  |   －            |    导出     |
 | title | 导出文件名  | string  |   －            |    导出文件     |
 | loading | 是否加载中状态  | boolean  |   －            |    false     |
-| options | 导出配置  | object  |   －            |    { labelList: [], valueList: [] }     |
+| options | 导出数据  | object  |   －            |    { labelList: [], valueList: [], str: '' }     |
 

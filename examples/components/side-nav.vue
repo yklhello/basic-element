@@ -11,11 +11,16 @@
     }
     .side-nav-title{
       padding: 0 24px 8px 0;
-      color: #8DABC4;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      font-size: 16px;
+      color: #333;
+      line-height: 40px;
+      height: 40px;
+      margin: 0;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      transition: .15s ease-out;
+      font-weight: 700;
     }
     .side-nav-items{
       font-size: 14px;

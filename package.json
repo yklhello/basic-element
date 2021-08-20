@@ -10,8 +10,8 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.example.js",
     "build:file": "node build/bin/gen-components & node build/bin/build-entry.js",
     "build:theme": "gulp build --gulpfile packages/sungrow-theme/gulpfile.js && cp-cli packages/sungrow-theme/lib lib/sungrow-theme",
-    "clean": "rimraf lib",
-    "dist": "npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
+    "clean": "rimraf lib && rimraf packages/*/lib",
+    "dist": "npm run clean && npm run build:file && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:theme"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
